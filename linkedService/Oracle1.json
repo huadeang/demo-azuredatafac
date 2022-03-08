@@ -1,0 +1,23 @@
+{
+	"name": "Oracle1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "Oracle",
+		"typeProperties": {
+			"connectionString": "host=oracle-vm;port=1521;sid=oratest1;user id=bank",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "oracle-pwd"
+			}
+		},
+		"connectVia": {
+			"referenceName": "selfhost01",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
