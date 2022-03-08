@@ -1,0 +1,9 @@
+{
+	"name": "bankdf001",
+	"location": "eastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d8c70082-17dd-46fe-b5bd-cf11dc3b5963",
+		"tenantId": "45be8033-beb7-4d4b-ab77-608ee11e6449"
+	}
+}

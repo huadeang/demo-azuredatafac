@@ -1,0 +1,24 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyFromBlobToSQLPipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/adfv2tutorial/blobs/inputEmp.txt",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/72f78248-2ec1-4b7c-b583-d4c92cdf5eca/resourceGroups/datafac-rg/providers/Microsoft.Storage/storageAccounts/adfv2tutorialbank",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
