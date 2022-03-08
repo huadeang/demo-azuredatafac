@@ -19,6 +19,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
 		},
+		"Oracle1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'Oracle1'"
+		},
 		"AzureStorageLinkedService_properties_typeProperties_connectionString_secretName": {
 			"type": "string",
 			"defaultValue": "storage-connection-string"
@@ -66,6 +70,9 @@
 					},
 					"AzureSQLDatabaseLinkedService_connectionString": {
 						"value": "[parameters('AzureSQLDatabaseLinkedService_connectionString')]"
+					},
+					"Oracle1_connectionString": {
+						"value": "[parameters('Oracle1_connectionString')]"
 					},
 					"AzureKeyVault1_properties_typeProperties_baseUrl": {
 						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
