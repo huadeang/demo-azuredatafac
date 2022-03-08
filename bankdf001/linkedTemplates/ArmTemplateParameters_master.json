@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "bankdf001"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureSQLDatabaseLinkedService_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"AzureStorageLinkedService_properties_typeProperties_connectionString_secretName": {
+			"value": "storage-connection-string"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/72f78248-2ec1-4b7c-b583-d4c92cdf5eca/resourceGroups/datafac-rg/providers/Microsoft.Storage/storageAccounts/adfv2tutorialbank"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://sangadkv.vault.azure.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
