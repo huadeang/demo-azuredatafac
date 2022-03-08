@@ -1,0 +1,16 @@
+{
+	"name": "SinkOracleDataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Oracle1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "OracleTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "BANK",
+			"table": "DATA_SOURCE_TABLE"
+		}
+	}
+}
